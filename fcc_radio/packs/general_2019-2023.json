@@ -2,7 +2,16 @@
   "deck": "us-general-2019-2023",
   "algorithm": "sm2",
   "domain": "G1A",
-  "source": "learn_me pack built by pack_builder.dart (1 source)",
+  "source_license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "NCVEC FCC General Question Pool (2019-2023)",
+  "provenance": {
+    "source_url": "https://www.ncvec.org/index.php/amateur-question-pools",
+    "generated_by": "pack_builder.dart v2",
+    "sources": [
+      "fcc-pool:US-General-2019-2023.json"
+    ]
+  },
   "cards": [
     {
       "id": "G0A01",

@@ -9,11 +9,17 @@ learn_me install can consume these without a custom import path.
 
 | Pack | License | Pool period | Cards | Figure-dependent | Embedded figures |
 |------|---------|-------------|-------|------------------|------------------|
-| `packs/technician_2018-2022.json` | Technician | 2018-2022 | 423 | 12 | 12 |
-| `packs/general_2019-2023.json` | General | 2019-2023 | 454 | 5 | 5 |
-| `packs/extra_2020-2024.json` | Extra | 2020-2024 | 622 | 27 | 27 |
+| `packs/technician_2018-2022.json` | Technician | `CC0-1.0` | 2018-2022 | 423 | 12 | 12 |
+| `packs/general_2019-2023.json` | General | `CC0-1.0` | 2019-2023 | 454 | 5 | 5 |
+| `packs/extra_2020-2024.json` | Extra | `CC0-1.0` | 2020-2024 | 622 | 27 | 27 |
 
 **Total: 1,499 cards, 44 figure-dependent, 44 figures embedded.**
+
+Every pack carries its license + provenance at deck level — `source_license`,
+`license_url`, `source`, `provenance` — so the terms travel with the data even
+when the engine re-exports it. The FCC/NCVEC pools are U.S. government works
+(47 CFR Part 97) in the public domain; the converted packs are released `CC0-1.0`.
+See [PROVENANCE.md](PROVENANCE.md) for the full source + license record.
 
 Each deck id (`us-technician-2018-2022`, …) derives from the pool filename, so a
 regenerated corpus keeps the same id and re-importing reuses cards instead of
@@ -31,7 +37,13 @@ come back the same deck.
   "deck": "us-extra-2020-2024",
   "algorithm": "sm2",
   "domain": "Extra",
-  "source": "FCC Extra Question Pool (2020-2024)",
+  "source_license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "NCVEC FCC Extra Question Pool (2020-2024)",
+  "provenance": {
+    "source_url": "https://www.ncvec.org/index.php/amateur-question-pools",
+    "sources": ["fcc-pool:US-Extra-2020-2024.json"]
+  },
   "cards": [
     {
       "id": "E5C10",
@@ -106,6 +118,9 @@ SRC='<clone>/data/us'                    # BaksiLi/RadioExamToolkit clone
 dart run tools/pack_builder.dart \
   --out fcc_radio/packs/technician_2018-2022.json \
   --deck us-technician-2018-2022 \
+  --license CC0-1.0 \
+  --source-name "NCVEC FCC Technician Question Pool (2018-2022)" \
+  --source-url "https://www.ncvec.org/index.php/amateur-question-pools" \
   --source "fcc-pool:$SRC/generated/US-Technician-2018-2022.json" \
   --images "$SRC/images"
 # N sources for the same pool -> merged + deduped (richer card wins):

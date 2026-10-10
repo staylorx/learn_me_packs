@@ -1,4 +1,4 @@
-# BACKLOG — learn_me_packs / amateur_radio
+# BACKLOG — learn_me_packs
 
 Open and pending items. Closed items move to CHANGELOG.md.
 
@@ -6,9 +6,15 @@ Open and pending items. Closed items move to CHANGELOG.md.
 
 - [] **Rationale & option grading.** *"keep an eye out for improvements that we might make to our core facts/associations/flashcards ... there may be some that have quite a bit more detail than just text facts, and I do not want to lose that."* The `options[].rationale` field is already carried by the schema (parser-json maps it); the FCC pools parsed here do not yet carry one. A future pass could pull the official answer book's rationale onto each option, and grade partial credit (3/1) where the source grades non-optimal but not-wrong answers.
 
-- [] **RDF-backed facts (long-term).** *"eventually I suspect I'll want to lean hard into RDF (that's where learn_me started after all)."* Currently out of the JSON packs by design; if it lands it would be a separate emission from the same source, not a change to the interchange. This repo currently carries **no** RDF dependency (matches the learn_me doctrine that removed RDF — see the bible). Open question: whether a future RDF form is generated from these packs or replaces them.
+- [] **RDF-backed facts (ingest from ORM/OWL/other RDF → pack).** *"eventually I suspect I'll want to lean hard into RDF (that's where learn_me started after all)."* New scope 2026-10-10: **fetch open RDF** (e.g. Monarch/UBERON skeletal anatomy) and convert to packs, carrying FOSS license + provenance. Decision open on both axes:
+  - **Where it lives:** the pack tool (an `rdf-owl` adapter beside `fcc-pool`/`anki`) vs. core. Recommendation: pack tool — core deliberately carries no RDF dependency (bible/doctrine), and an adapter is a drop-in; keeps the "one or the other, not both" residency clean and reversible.
+  - **License carry:** UBERON is **CC-BY-3.0** (confirmed) — *not* ShareAlike, so a derived pack can be released under CC0 with attribution. Required: attribution + indication of changes + no-added-restrictions; CC0-derivative is the standard permitted path. The schema already carries this (`source_license` at deck level; `source`/`provenance` per card) — the pack builder now emits it.
+  - **Monarch caveat:** "the Monarch system" licenses per-dataset (Monarch recommends CC0/CC-BY-4.0, but upstream sources vary) — need a per-source license check, not a blanket assumption. UBERON itself is clean CC-BY-3.0.
 
-- [] **Commit learn_me_packs to git.** The user has not decided to version this under git: *"I don't have a github repo for learn_me_packs, so we'll see what comes of this before we commit to that."* Benchmarked open pending a decision.
+- [x] ~~**Commit learn_me_packs to git.**~~ Resolved 2026-10-10: repo pushed to
+  `staylorx/learn_me_packs` (HTTPS+PAT), restructured into per-pack-group folders
+  (`fcc_radio/`, `tools/` at root). See CHANGELOG. (User: *"access to the
+  staylorx/learn_me_packs is available. push the project up and proceed."*)
 
 - [] **Image-occlusion as a card shape (deferred).** The dominant anatomy deck format is Image Occlusion (2,571 of 3,315 notes in the 82MB `Gross_Anatomy_154.apkg` smoke-test deck): a diagram plus SVG Question/Answer/Original mask overlays, plus text prompt fields. Current anki adapter (and `parser-anki`) parse only **basic 2-field** notes and skip IO/cloze. Building IO faithfully is a *card shape* concern (image + hotspot labels), so it belongs with the engine/`parser-anki` rather than as a pack-source adapter hack. Deferred behind the residency decision below.
 

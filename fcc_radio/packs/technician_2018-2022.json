@@ -2,7 +2,16 @@
   "deck": "us-technician-2018-2022",
   "algorithm": "sm2",
   "domain": "T1A",
-  "source": "learn_me pack built by pack_builder.dart (1 source)",
+  "source_license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "NCVEC FCC Technician Question Pool (2018-2022)",
+  "provenance": {
+    "source_url": "https://www.ncvec.org/index.php/amateur-question-pools",
+    "generated_by": "pack_builder.dart v2",
+    "sources": [
+      "fcc-pool:US-Technician-2018-2022.json"
+    ]
+  },
   "cards": [
     {
       "id": "T0A01",

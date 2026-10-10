@@ -74,6 +74,9 @@ Future<void> main(List<String> args) async {
   final deckId = _flag(args, '--deck');
   final algorithm = _flag(args, '--algorithm') ?? 'sm2';
   final imagesDir = _flag(args, '--images');
+  final license = _flag(args, '--license');
+  final sourceName = _flag(args, '--source-name');
+  final sourceUrl = _flag(args, '--source-url');
 
   final srcList = <String>[];
   for (var i = 0; i < args.length; i++) {
@@ -86,7 +89,8 @@ Future<void> main(List<String> args) async {
     stderr.writeln(
       'usage: dart run tools/pack_builder.dart --out <pack.json> '
       '[--deck <id>] [--algorithm <sm2|fsrs|naive>] '
-      '[--images <dir>] --source <FORMAT:path-or-url> [--source ...]',
+      '[--images <dir>] [--license <SPDX>] [--source-name <name>] '
+      '[--source-url <url>] --source <FORMAT:path-or-url> [--source ...]',
     );
     exit(2);
   }
@@ -133,13 +137,24 @@ Future<void> main(List<String> args) async {
 
   final sorted = cards.values.toList()..sort(_compareCards);
   final topDomain = levelDomain.isEmpty ? null : levelDomain.first;
+  final resolvedDeckId = deckId ?? _deckIdFromSources(srcList);
+  final effectiveLicense = license ?? _defaultLicenseFor(resolvedDeckId);
 
   final document = <String, Object?>{
-    'deck': deckId ?? _deckIdFromSources(srcList),
+    'deck': resolvedDeckId,
     'algorithm': algorithm,
     if (topDomain != null) 'domain': topDomain,
-    'source': 'learn_me pack built by pack_builder.dart '
-        '(${srcList.length} source${srcList.length == 1 ? '' : 's'})',
+    // License + provenance: every pack states where it came from and under what
+    // terms, at deck level (the schema's `source_license` field, deck_document.dart).
+    // A derived pack's license is the SOURCE's license for the derived content.
+    'source_license': effectiveLicense,
+    'license_url': _licenseUrl(effectiveLicense),
+    if (sourceName != null && sourceName.isNotEmpty) 'source': sourceName,
+    if (sourceUrl != null && sourceUrl.isNotEmpty) 'provenance': {
+      'source_url': sourceUrl,
+      'generated_by': 'pack_builder.dart v2',
+      'sources': [for (final s in srcList) _describeSource(s)],
+    },
     'cards': [for (final c in sorted) c.toCardJson()],
   };
 
@@ -273,6 +288,39 @@ String _levelFromSource(String source) {
   if (lower.contains('general')) return 'General';
   if (lower.contains('extra')) return 'Extra';
   return 'Amateur';
+}
+
+/// A sensible default source license. FCC/NCVEC pools are U.S. government
+/// works (47 CFR Part 97) and effectively public domain; any other corpus
+/// defaults to the safest general derivative license.
+String _defaultLicenseFor(String deckId) {
+  if (deckId.startsWith('us-')) return 'CC0-1.0';
+  return 'CC-BY-4.0';
+}
+
+/// Canonical URL for a known license (SPDX ids). Unknown ids fall back to the
+/// SPDX registry page so the value stays machine-readable.
+String _licenseUrl(String license) => switch (license) {
+      'CC0-1.0' => 'https://creativecommons.org/publicdomain/zero/1.0/',
+      'CC-BY-3.0' => 'https://creativecommons.org/licenses/by/3.0/',
+      'CC-BY-4.0' => 'https://creativecommons.org/licenses/by/4.0/',
+      'MIT' => 'https://opensource.org/licenses/MIT',
+      'Apache-2.0' => 'https://www.apache.org/licenses/LICENSE-2.0',
+      _ => 'https://spdx.org/licenses/$license',
+    };
+
+/// Faithfully name a source for provenance: a URL as-is, a local path as its
+/// basename (the format prefix preserved) — a path is only a note, not a
+/// durable identity.
+String _describeSource(String spec) {
+  final colon = spec.indexOf(':');
+  final format = colon < 0 ? 'fcc-pool' : spec.substring(0, colon);
+  final location = colon < 0 ? spec : spec.substring(colon + 1);
+  final isUrl = location.startsWith('http://') ||
+      location.startsWith('https://');
+  return isUrl
+      ? location
+      : '$format:${location.split(RegExp(r'[/\\\\]')).last}';
 }
 
 String _deckIdFromSources(List<String> srcs) {

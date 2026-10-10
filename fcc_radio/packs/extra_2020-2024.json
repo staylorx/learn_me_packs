@@ -2,7 +2,16 @@
   "deck": "us-extra-2020-2024",
   "algorithm": "sm2",
   "domain": "E1A",
-  "source": "learn_me pack built by pack_builder.dart (1 source)",
+  "source_license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "NCVEC FCC Extra Question Pool (2020-2024)",
+  "provenance": {
+    "source_url": "https://www.ncvec.org/index.php/amateur-question-pools",
+    "generated_by": "pack_builder.dart v2",
+    "sources": [
+      "fcc-pool:US-Extra-2020-2024.json"
+    ]
+  },
   "cards": [
     {
       "id": "E0A01",
