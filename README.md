@@ -64,8 +64,3 @@ The **pack contents** carry the license of their pack group (see the `LICENSE.md
 inside each group — the source corpora and derivative packs are attributed
 there). No copyrighted deck material is redistributed here; all sources are open
 licensed and pointed to rather than claimed.
-
-## Notes / deferred
-
-Open questions, pending decisions and future work live in
-[`BACKLOG.md`](BACKLOG.md), not here.

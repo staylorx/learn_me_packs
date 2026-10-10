@@ -113,11 +113,6 @@ the same figures in SVG form for the newer pools. NCVEC rotates pools on a
 
 Full source + license record: [PROVENANCE.md](PROVENANCE.md).
 
-## Notes / deferred
-
-Open items, pending decisions and future work live in
-[`BACKLOG.md`](../BACKLOG.md), not here.
-
 ## See also
 
 - [learn_me `parser-json`](https://github.com/taybiz/learn_me) — the reader/writer
