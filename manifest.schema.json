@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/staylorx/learn_me_packs/blob/main/manifest.schema.json",
+  "title": "learn_me pack manifest",
+  "description": "The root inventory of a learn_me pack repo. Apps that register pack endpoints read this to know which packs they can import, under what license, by subject/tag/age. Part of the learn_me pack spec.",
+  "type": "object",
+  "required": ["spec", "version", "packs"],
+  "properties": {
+    "spec": {
+      "const": "learn-me-pack-manifest",
+      "description": "Fixed marker so a consumer can tell a manifest from a deck document."
+    },
+    "version": {
+      "const": 1,
+      "description": "Manifest schema version. Bump when the shape changes; consumers gate on it."
+    },
+    "packs": {
+      "type": "array",
+      "description": "One entry per pack in the repo, in deck-id order.",
+      "items": {
+        "type": "object",
+        "required": ["id", "file", "title", "subject", "license", "cards"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "The deck id (the DeckDocument `deck` field). Stable identity; re-import reuses cards."
+          },
+          "file": {
+            "type": "string",
+            "description": "Path to the pack JSON, relative to the repo root."
+          },
+          "title": {
+            "type": "string",
+            "description": "Human-readable title."
+          },
+          "subject": {
+            "type": "string",
+            "description": "Primary subject (e.g. amateur-radio, anatomy). Free-form slug; consumers group by it."
+          },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Free-form tags for filtering (e.g. fcc, ncvec, license-exam, us)."
+          },
+          "age": {
+            "type": "string",
+            "description": "Recommended minimum age or age band, free-form (e.g. 16+, adult)."
+          },
+          "license": {
+            "type": "string",
+            "description": "SPDX license id of the pack content (the DeckDocument `source_license`)."
+          },
+          "cards": {
+            "type": "integer",
+            "description": "Number of cards in the pack."
+          },
+          "algorithm": {
+            "type": "string",
+            "description": "The deck's scheduling algorithm (sm2, fsrs, naive)."
+          },
+          "source": {
+            "type": "string",
+            "description": "Human-readable source corpus name (the DeckDocument `source`)."
+          },
+          "source_url": {
+            "type": "string",
+            "description": "URL of the source corpus, when one is known."
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "spec": "learn-me-pack-manifest",
+  "version": 1,
+  "packs": [
+    {
+      "id": "us-extra-2020-2024",
+      "file": "fcc_radio/packs/extra_2020-2024.json",
+      "title": "US Amateur Radio Extra (2020-2024)",
+      "subject": "amateur-radio",
+      "tags": [
+        "fcc",
+        "ncvec",
+        "license-exam",
+        "us"
+      ],
+      "age": "16+",
+      "license": "CC0-1.0",
+      "cards": 622,
+      "algorithm": "sm2",
+      "source": "NCVEC FCC Extra Question Pool (2020-2024)",
+      "source_url": "https://www.ncvec.org/index.php/amateur-question-pools"
+    },
+    {
+      "id": "us-general-2019-2023",
+      "file": "fcc_radio/packs/general_2019-2023.json",
+      "title": "US Amateur Radio General (2019-2023)",
+      "subject": "amateur-radio",
+      "tags": [
+        "fcc",
+        "ncvec",
+        "license-exam",
+        "us"
+      ],
+      "age": "16+",
+      "license": "CC0-1.0",
+      "cards": 454,
+      "algorithm": "sm2",
+      "source": "NCVEC FCC General Question Pool (2019-2023)",
+      "source_url": "https://www.ncvec.org/index.php/amateur-question-pools"
+    },
+    {
+      "id": "us-technician-2018-2022",
+      "file": "fcc_radio/packs/technician_2018-2022.json",
+      "title": "US Amateur Radio Technician (2018-2022)",
+      "subject": "amateur-radio",
+      "tags": [
+        "fcc",
+        "ncvec",
+        "license-exam",
+        "us"
+      ],
+      "age": "16+",
+      "license": "CC0-1.0",
+      "cards": 423,
+      "algorithm": "sm2",
+      "source": "NCVEC FCC Technician Question Pool (2018-2022)",
+      "source_url": "https://www.ncvec.org/index.php/amateur-question-pools"
+    }
+  ]
+}

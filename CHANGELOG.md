@@ -3,6 +3,27 @@
 Dated deliveries. Decisions and completed work live here; BACKLOG.md holds
 only open/pending items.
 
+## 2026-10-10 — root manifest + deck-doc adapter
+
+Added the **learn_me pack manifest** — the root inventory that makes a pack repo
+serveable over a registered pack endpoint.
+
+- `manifest.json` at the repo root: one row per pack, keyed by deck id, carrying
+  `license`, `subject`, `tags`, `age`, `cards`, `algorithm`, `source` —
+  everything an app needs to decide which packs it can import and under what
+  terms. Shape locked by `manifest.schema.json` (`spec`+`version` gate).
+- The manifest is **derived output**: `tools/pack_builder.dart` gained a
+  `--manifest <path>` flag (plus `--title`/`--subject`/`--tags`/`--age` row
+  fields) that upserts the just-built pack's row, so it never drifts from the
+  packs on disk. Backed by `tools/manifest.dart`.
+- Added the `deck-doc` adapter (`tools/deck_doc.dart`), which re-ingests an
+  existing `DeckDocument` pack as a source — the builder's own output — so a
+  repo's manifest can be regenerated idempotently without re-running the
+  original source pipeline.
+- Regenerated all three FCC packs through the builder with the new flags; the
+  manifest now lists them (423/454/622 cards, 12/5/27 figures), and each pack's
+  card set is byte-for-byte unchanged vs `HEAD` (0 missing / 0 added).
+
 ## 2026-10-09 — anki adapter for pack_builder
 
 Added `tools/anki_apkg.dart` (self-contained Anki `.apkg` adapter) to

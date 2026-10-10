@@ -40,6 +40,8 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'anki_apkg.dart';
+import 'deck_doc.dart';
+import 'manifest.dart';
 import 'raw_cards.dart';
 import 'rdf_owl.dart';
 
@@ -64,6 +66,9 @@ Future<List<RawCard>> _fccPoolAdapter(
 final _registry = <String, Adapter>{
   'fcc-pool': _fccPoolAdapter,
   'anki': _parseAnkiApkg,
+  // deck-doc: re-ingest an existing DeckDocument pack (round-trip / manifest
+  // regeneration). The inverse of the emitter.
+  'deck-doc': (bytes, location, {images}) => Future.value(deckDocParse(bytes, location)),
   // rdf-owl: the location IS the root IRI (or comma-separated list); bytes are
   // unused — the adapter fetches the subtree from OLS itself.
   'rdf-owl': (bytes, location, {images}) => rdfOwlParse(location),
@@ -81,6 +86,13 @@ Future<void> main(List<String> args) async {
   final license = _flag(args, '--license');
   final sourceName = _flag(args, '--source-name');
   final sourceUrl = _flag(args, '--source-url');
+  // Manifest inventory row (optional): --manifest <path> enables the root
+  // inventory update; the row's title/subject/tags/age come from these.
+  final manifestPath = _flag(args, '--manifest');
+  final title = _flag(args, '--title');
+  final subject = _flag(args, '--subject');
+  final tags = _flag(args, '--tags');
+  final age = _flag(args, '--age');
 
   final srcList = <String>[];
   for (var i = 0; i < args.length; i++) {
@@ -171,12 +183,36 @@ Future<void> main(List<String> args) async {
     const JsonEncoder.withIndent('  ').convert(document),
   );
   stdout.writeln(
-    'Wrote $outPath: ${sorted.length} cards '
-    '(${sorted.where((c) => c.figureDependent).length} figure-dependent, '
-    '${sorted.where((c) => c.figure != null).length} primary figures, '
-    '${sorted.where((c) => c.media.isNotEmpty).length} with media)',
-  );
-}
+      'Wrote $outPath: ${sorted.length} cards '
+      '(${sorted.where((c) => c.figureDependent).length} figure-dependent, '
+      '${sorted.where((c) => c.figure != null).length} primary figures, '
+      '${sorted.where((c) => c.media.isNotEmpty).length} with media)',
+    );
+
+    // Root inventory: when --manifest is given, upsert this pack's row so the
+    // manifest never drifts from the packs on disk. The row is derived output.
+    if (manifestPath != null) {
+      final count = upsertManifestEntry(
+        manifestPath,
+        ManifestEntry(
+          id: resolvedDeckId,
+          file: outPath,
+          title: title ?? resolvedDeckId,
+          subject: subject ?? topDomain ?? 'general',
+          tags: tags == null
+              ? const []
+              : tags.split(',').map((t) => t.trim()).where((t) => t.isNotEmpty).toList(),
+          age: age,
+          license: effectiveLicense,
+          cards: sorted.length,
+          algorithm: algorithm,
+          source: sourceName,
+          sourceUrl: sourceUrl,
+        ),
+      );
+      stdout.writeln('Manifest $manifestPath now lists $count packs');
+    }
+  }
 
 // ---------------------------------------------------------------------------
 // FCC pool adapter — the BaksiLi/RadioExamToolkit JSON schema.
