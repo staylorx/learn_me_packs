@@ -1,0 +1,9 @@
+# Build / transient output
+build/
+.dart_tool/
+pubspec.lock
+
+# Local-only copyrighted test decks (never committed/redistributed)
+*.apkg
+*.anki2
+*.anki21

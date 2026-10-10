@@ -1,0 +1,8 @@
+# Line endings are a repository property, not a contributor's local setting.
+# Same rule as the learn_me_core engine repo: `text=auto eol=lf` normalizes text
+# to LF on commit regardless of local autocrlf; real binaries stay binary.
+* text=auto eol=lf
+*.apkg binary
+*.png binary
+*.jpg binary
+*.jpeg binary

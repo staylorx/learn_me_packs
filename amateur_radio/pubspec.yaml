@@ -1,0 +1,19 @@
+name: learn_me_pack_builder
+description: Generic pack builder for learn_me DeckDocument JSON packs. Consumes
+  local/remote JSON question pools and Anki .apkg decks, dedupes, sorts, and
+  emits one learn_me deck document per run.
+publish_to: none
+version: 0.1.0
+
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+
+dependencies:
+  archive: ^4.0.9
+  html: ^0.15.4
+  path: ^1.8.3
+  sqlite3: ^3.3.4
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.24.0
