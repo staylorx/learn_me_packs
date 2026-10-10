@@ -91,7 +91,8 @@ keep in sync instead of reusing the one the app already reads.
 ## Convert / regenerate
 
 The converter is a generic **pack builder** — a Dart tool (this is a Dart shop),
-`tools/pack_builder.dart`, that takes **1..N sources** (local JSON *or* http(s)
+`tools/pack_builder.dart` at the repo root, that takes **1..N sources** (local
+JSON *or* http(s)
 URL), each parsed by a format adapter, merges them, dedupes by content (front +
 best answer; richer card wins), sorts, and emits ONE learn_me DeckDocument pack.
 The FCC question-pool schema is one adapter (`fcc-pool`); the pipeline is
@@ -101,15 +102,15 @@ an Anki or JSON-interchange adapter is a drop-in.
 ```bash
 export PATH="<fvm>/default/bin:$PATH"   # fvm-managed Dart, not on PATH by default
 SRC='<clone>/data/us'                    # BaksiLi/RadioExamToolkit clone
-# one source -> one pack:
+# one source -> one pack (run from the repo root, where pubspec.yaml lives):
 dart run tools/pack_builder.dart \
-  --out packs/technician_2018-2022.json \
+  --out fcc_radio/packs/technician_2018-2022.json \
   --deck us-technician-2018-2022 \
   --source "fcc-pool:$SRC/generated/US-Technician-2018-2022.json" \
   --images "$SRC/images"
 # N sources for the same pool -> merged + deduped (richer card wins):
 dart run tools/pack_builder.dart \
-  --out packs/extra_2020-2024.json \
+  --out fcc_radio/packs/extra_2020-2024.json \
   --deck us-extra-2020-2024 \
   --source "fcc-pool:$SRC/generated/US-Extra-2020-2024.json" \
   --source "fcc-pool:https://raw.githubusercontent.com/<org>/<repo>/US-Extra.json" \
@@ -130,12 +131,12 @@ the same figures in SVG form for the newer pools. NCVEC rotates pools on a
 4-year cycle (July 1); to move to the current pool, re-run `pack_builder.dart`
 against the updated source.
 
-Raw source texts and provenance: see [`sources/`](sources/PROVENANCE.md).
+Raw source texts and provenance: see [`sources/`](../sources/PROVENANCE.md).
 
 ## Notes / deferred
 
 Open items, pending decisions and future work live in
-[`BACKLOG.md`](BACKLOG.md), not here.
+[`BACKLOG.md`](../BACKLOG.md), not here.
 
 ## See also
 
