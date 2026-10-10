@@ -30,7 +30,7 @@ bytes ride as a sibling `figure` media object.
 
 ## Conversion record
 
-- Tool: `tools/pack_builder.dart` (in this repo), `fcc-pool` adapter.
+- Tool: the learn_me pack builder in `learn_me_core`, `fcc-pool` adapter.
 - Deck ids are content-derived from the pool filename
   (`us-technician-2018-2022`, …), so re-importing reuses cards and keeps review
   history.

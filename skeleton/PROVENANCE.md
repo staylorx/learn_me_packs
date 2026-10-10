@@ -18,7 +18,7 @@ added or rewritten by hand.
 
 ## Conversion record
 
-- Tool: `tools/pack_builder.dart` (this repo), `rdf-owl` adapter.
+- Tool: the learn_me pack builder in `learn_me_core`, `rdf-owl` adapter.
 - Each term's `part_of` parents (BFO:0000050) become "X is part of Y" cards.
 - Terms selected: the human skeletal bones (see the pack's card list).
 - Deck id: `us-skeleton`.

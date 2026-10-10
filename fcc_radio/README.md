@@ -100,53 +100,18 @@ above, which a JSON pack maps onto one-to-one with **zero schema to maintain** �
 the parser already enforces it. YAML would have invented a *second* schema to
 keep in sync instead of reusing the one the app already reads.
 
-## Convert / regenerate
+## Source
 
-The converter is a generic **pack builder** — a Dart tool (this is a Dart shop),
-`tools/pack_builder.dart` at the repo root, that takes **1..N sources** (local
-JSON *or* http(s)
-URL), each parsed by a format adapter, merges them, dedupes by content (front +
-best answer; richer card wins), sorts, and emits ONE learn_me DeckDocument pack.
-The FCC question-pool schema is one adapter (`fcc-pool`); the pipeline is
-`wrangle -> parse -> merge/dedupe -> sort -> emit` and is not FCC-specific —
-an Anki or JSON-interchange adapter is a drop-in.
-
-```bash
-export PATH="<fvm>/default/bin:$PATH"   # fvm-managed Dart, not on PATH by default
-SRC='<clone>/data/us'                    # BaksiLi/RadioExamToolkit clone
-# one source -> one pack (run from the repo root, where pubspec.yaml lives):
-dart run tools/pack_builder.dart \
-  --out fcc_radio/packs/technician_2018-2022.json \
-  --deck us-technician-2018-2022 \
-  --license CC0-1.0 \
-  --source-name "NCVEC FCC Technician Question Pool (2018-2022)" \
-  --source-url "https://www.ncvec.org/index.php/amateur-question-pools" \
-  --source "fcc-pool:$SRC/generated/US-Technician-2018-2022.json" \
-  --images "$SRC/images"
-# N sources for the same pool -> merged + deduped (richer card wins):
-dart run tools/pack_builder.dart \
-  --out fcc_radio/packs/extra_2020-2024.json \
-  --deck us-extra-2020-2024 \
-  --source "fcc-pool:$SRC/generated/US-Extra-2020-2024.json" \
-  --source "fcc-pool:https://raw.githubusercontent.com/<org>/<repo>/US-Extra.json" \
-  --images "$SRC/images"
-```
-
-Sources can be a URL — the tool fetches it. `--deck` fixes the deck id so a
-regenerated corpus keeps the same id and re-import reuses cards; omit it to
-derive the id from the first source's filename. Pass **native Windows paths**
-(`C:/…`) to `--source`/`--images` — MSYS `/c/…` paths fail with
-PathNotFoundException.
-
-Source pools are the FCC/NCVEC public-domain question pools, parsed into JSON by
+Packs are built with the pack builder in `learn_me_core`
+(`packages/pack-builder/`, `fcc-pool` adapter). Source pools are the
+FCC/NCVEC public-domain question pools, parsed into JSON by
 [BaksiLi/RadioExamToolkit](https://github.com/BaksiLi/RadioExamToolkit) (which
-also carries the figure images, in `data/us/images/`). The
+also carries the figure images, in `data/us/images/`); the
 [jrf/anki_amateur_radio](https://github.com/jrf/anki_amateur_radio) repo embeds
 the same figures in SVG form for the newer pools. NCVEC rotates pools on a
-4-year cycle (July 1); to move to the current pool, re-run `pack_builder.dart`
-against the updated source.
+4-year cycle (July 1).
 
-Raw source texts and provenance: see [`sources/`](../sources/PROVENANCE.md).
+Full source + license record: [PROVENANCE.md](PROVENANCE.md).
 
 ## Notes / deferred
 
