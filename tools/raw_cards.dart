@@ -95,10 +95,16 @@ class RawCard {
 /// answer) collapse to one card.
 String contentHandle(RawCard c) {
   final best = c.options.where((o) => o.score > 0).map((o) => o.text).join('|');
+  // For plain cards (no options), the back is part of identity: "X is part of
+  // Y" cards differ by their Y, so the handle must include it or they'd all
+  // collapse to one card.
+  final identity = c.options.isEmpty && c.back != null && c.back!.isNotEmpty
+      ? clean(c.back!)
+      : best;
   final buffer = StringBuffer()
     ..write(clean(c.front))
     ..write('@@')
-    ..write(clean(best));
+    ..write(clean(identity));
   return buffer.toString();
 }
 

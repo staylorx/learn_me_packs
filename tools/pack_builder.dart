@@ -41,6 +41,7 @@ import 'dart:io';
 
 import 'anki_apkg.dart';
 import 'raw_cards.dart';
+import 'rdf_owl.dart';
 
 // ---------------------------------------------------------------------------
 // Adapters: FORMAT -> (location bytes) -> List<RawCard>. Each adapter owns its
@@ -60,9 +61,12 @@ Future<List<RawCard>> _fccPoolAdapter(
 }) =>
     Future.value(_parseFccPool(bytes, location, images));
 
-const _registry = <String, Adapter>{
+final _registry = <String, Adapter>{
   'fcc-pool': _fccPoolAdapter,
   'anki': _parseAnkiApkg,
+  // rdf-owl: the location IS the root IRI (or comma-separated list); bytes are
+  // unused — the adapter fetches the subtree from OLS itself.
+  'rdf-owl': (bytes, location, {images}) => rdfOwlParse(location),
 };
 
 // ---------------------------------------------------------------------------
@@ -114,7 +118,11 @@ Future<void> main(List<String> args) async {
       exit(2);
     }
 
-    final bytes = await readLocation(location);
+    // rdf-owl's location is a root IRI the adapter fetches itself; it has no
+    // bytes to read. Every other adapter reads a file or URL.
+    final bytes = format == 'rdf-owl'
+        ? const <int>[]
+        : await readLocation(location);
     final parsed = await adapter(bytes, location, images: images);
     if (parsed.isEmpty) {
       stderr.writeln('warning: no cards parsed from $location');
