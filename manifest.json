@@ -39,6 +39,24 @@
       "source_url": "https://www.ncvec.org/index.php/amateur-question-pools"
     },
     {
+      "id": "us-skeleton",
+      "file": "skeleton/packs/skeleton.json",
+      "title": "Human Skeletal Bones (UBERON)",
+      "subject": "anatomy",
+      "tags": [
+        "anatomy",
+        "skeleton",
+        "bones",
+        "uberon"
+      ],
+      "age": "16+",
+      "license": "CC0-1.0",
+      "cards": 109,
+      "algorithm": "sm2",
+      "source": "UBERON anatomy ontology (human skeletal bones)",
+      "source_url": "https://www.ebi.ac.uk/ols4/ontologies/uberon"
+    },
+    {
       "id": "us-technician-2018-2022",
       "file": "fcc_radio/packs/technician_2018-2022.json",
       "title": "US Amateur Radio Technician (2018-2022)",

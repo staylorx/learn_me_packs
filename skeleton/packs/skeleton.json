@@ -1,0 +1,1216 @@
+{
+  "deck": "us-skeleton",
+  "algorithm": "sm2",
+  "domain": "anatomy",
+  "source_license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source": "UBERON anatomy ontology (human skeletal bones)",
+  "provenance": {
+    "source_url": "https://www.ebi.ac.uk/ols4/ontologies/uberon",
+    "generated_by": "pack_builder.dart v2",
+    "sources": [
+      "http://purl.obolibrary.org/obo/UBERON_0000981,http://purl.obolibrary.org/obo/UBERON_0000979,http://purl.obolibrary.org/obo/UBERON_0001446,http://purl.obolibrary.org/obo/UBERON_0000976,http://purl.obolibrary.org/obo/UBERON_0001423,http://purl.obolibrary.org/obo/UBERON_0001424,http://purl.obolibrary.org/obo/UBERON_0001105,http://purl.obolibrary.org/obo/UBERON_0006849,http://purl.obolibrary.org/obo/UBERON_0000975,http://purl.obolibrary.org/obo/UBERON_0001273,http://purl.obolibrary.org/obo/UBERON_0001274,http://purl.obolibrary.org/obo/UBERON_0002446,http://purl.obolibrary.org/obo/UBERON_0003128,http://purl.obolibrary.org/obo/UBERON_0001684,http://purl.obolibrary.org/obo/UBERON_0002412,http://purl.obolibrary.org/obo/UBERON_0002228,http://purl.obolibrary.org/obo/UBERON_0003690,http://purl.obolibrary.org/obo/UBERON_0001350,http://purl.obolibrary.org/obo/UBERON_0001685,http://purl.obolibrary.org/obo/UBERON_0001678,http://purl.obolibrary.org/obo/UBERON_0000209,http://purl.obolibrary.org/obo/UBERON_0000210,http://purl.obolibrary.org/obo/UBERON_0001676,http://purl.obolibrary.org/obo/UBERON_0001677,http://purl.obolibrary.org/obo/UBERON_0001679,http://purl.obolibrary.org/obo/UBERON_0002397,http://purl.obolibrary.org/obo/UBERON_0001681,http://purl.obolibrary.org/obo/UBERON_0001680,http://purl.obolibrary.org/obo/UBERON_0001435,http://purl.obolibrary.org/obo/UBERON_0001447"
+    ]
+  },
+  "cards": [
+    {
+      "id": "UBERON:0000209-orbit-of-skull",
+      "front": "tetrapod frontal bone",
+      "back": "orbit of skull",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0000209"
+      ]
+    },
+    {
+      "id": "UBERON:0000209-neurocranium",
+      "front": "tetrapod frontal bone",
+      "back": "neurocranium",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0000209"
+      ]
+    },
+    {
+      "id": "UBERON:0000209-dermatocranium",
+      "front": "tetrapod frontal bone",
+      "back": "dermatocranium",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0000209"
+      ]
+    },
+    {
+      "id": "UBERON:0000210-neurocranium",
+      "front": "tetrapod parietal bone",
+      "back": "neurocranium",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0000210"
+      ]
+    },
+    {
+      "id": "UBERON:0000210-vault-of-skull",
+      "front": "tetrapod parietal bone",
+      "back": "vault of skull",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0000210"
+      ]
+    },
+    {
+      "id": "UBERON:0000975-thoracic-segment-of-trunk",
+      "front": "sternum",
+      "back": "thoracic segment of trunk",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0000975"
+      ]
+    },
+    {
+      "id": "UBERON:0000975-rib",
+      "front": "sternum",
+      "back": "rib",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0000975"
+      ]
+    },
+    {
+      "id": "UBERON:0000975-thoracic-rib-cage",
+      "front": "sternum",
+      "back": "thoracic rib cage",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0000975"
+      ]
+    },
+    {
+      "id": "UBERON:0000975-pectoral-girdle-skeleton",
+      "front": "sternum",
+      "back": "pectoral girdle skeleton",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0000975"
+      ]
+    },
+    {
+      "id": "UBERON:0000976-forelimb-skeleton",
+      "front": "humerus",
+      "back": "forelimb skeleton",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0000976"
+      ]
+    },
+    {
+      "id": "UBERON:0000976-glenohumeral-joint",
+      "front": "humerus",
+      "back": "glenohumeral joint",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0000976"
+      ]
+    },
+    {
+      "id": "UBERON:0000976-bone-tissue",
+      "front": "humerus",
+      "back": "bone tissue",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0000976"
+      ]
+    },
+    {
+      "id": "UBERON:0000976-forelimb-stylopod",
+      "front": "humerus",
+      "back": "forelimb stylopod",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0000976"
+      ]
+    },
+    {
+      "id": "UBERON:0000976-humerus-cartilage-element",
+      "front": "humerus",
+      "back": "humerus cartilage element",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0000976"
+      ]
+    },
+    {
+      "id": "UBERON:0000976-pectoral-girdle-skeleton",
+      "front": "humerus",
+      "back": "pectoral girdle skeleton",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0000976"
+      ]
+    },
+    {
+      "id": "UBERON:0000979-bone-tissue",
+      "front": "tibia",
+      "back": "bone tissue",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0000979"
+      ]
+    },
+    {
+      "id": "UBERON:0000979-hindlimb-zeugopod-skeleton",
+      "front": "tibia",
+      "back": "hindlimb zeugopod skeleton",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0000979"
+      ]
+    },
+    {
+      "id": "UBERON:0000979-tibia-cartilage-element",
+      "front": "tibia",
+      "back": "tibia cartilage element",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0000979"
+      ]
+    },
+    {
+      "id": "UBERON:0000981-hindlimb-skeleton",
+      "front": "femur",
+      "back": "hindlimb skeleton",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0000981"
+      ]
+    },
+    {
+      "id": "UBERON:0000981-bone-tissue",
+      "front": "femur",
+      "back": "bone tissue",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0000981"
+      ]
+    },
+    {
+      "id": "UBERON:0000981-pelvic-girdle-skeleton",
+      "front": "femur",
+      "back": "pelvic girdle skeleton",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0000981"
+      ]
+    },
+    {
+      "id": "UBERON:0000981-femur-cartilage-element",
+      "front": "femur",
+      "back": "femur cartilage element",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0000981"
+      ]
+    },
+    {
+      "id": "UBERON:0000981-hindlimb-stylopod",
+      "front": "femur",
+      "back": "hindlimb stylopod",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0000981"
+      ]
+    },
+    {
+      "id": "UBERON:0001105-appendicular-skeleton",
+      "front": "clavicle bone",
+      "back": "appendicular skeleton",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001105"
+      ]
+    },
+    {
+      "id": "UBERON:0001105-pectoral-girdle-skeleton",
+      "front": "clavicle bone",
+      "back": "pectoral girdle skeleton",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001105"
+      ]
+    },
+    {
+      "id": "UBERON:0001105-clavicle-cartilage-element",
+      "front": "clavicle bone",
+      "back": "clavicle cartilage element",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001105"
+      ]
+    },
+    {
+      "id": "UBERON:0001105-clavicle-bone-primordium",
+      "front": "clavicle bone",
+      "back": "clavicle bone primordium",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001105"
+      ]
+    },
+    {
+      "id": "UBERON:0001273-innominate-bone",
+      "front": "ilium",
+      "back": "innominate bone",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001273"
+      ]
+    },
+    {
+      "id": "UBERON:0001273-bone-tissue",
+      "front": "ilium",
+      "back": "bone tissue",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001273"
+      ]
+    },
+    {
+      "id": "UBERON:0001273-pelvic-girdle-bone-zone",
+      "front": "ilium",
+      "back": "pelvic girdle bone/zone",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001273"
+      ]
+    },
+    {
+      "id": "UBERON:0001273-pelvic-girdle-skeleton",
+      "front": "ilium",
+      "back": "pelvic girdle skeleton",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001273"
+      ]
+    },
+    {
+      "id": "UBERON:0001273-iliac-cartilage-element",
+      "front": "ilium",
+      "back": "iliac cartilage element",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001273"
+      ]
+    },
+    {
+      "id": "UBERON:0001274-innominate-bone",
+      "front": "ischium",
+      "back": "innominate bone",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001274"
+      ]
+    },
+    {
+      "id": "UBERON:0001274-bone-tissue",
+      "front": "ischium",
+      "back": "bone tissue",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001274"
+      ]
+    },
+    {
+      "id": "UBERON:0001274-ischial-cartilage-element",
+      "front": "ischium",
+      "back": "ischial cartilage element",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001274"
+      ]
+    },
+    {
+      "id": "UBERON:0001274-pelvic-girdle-bone-zone",
+      "front": "ischium",
+      "back": "pelvic girdle bone/zone",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001274"
+      ]
+    },
+    {
+      "id": "UBERON:0001274-pelvic-girdle-skeleton",
+      "front": "ischium",
+      "back": "pelvic girdle skeleton",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001274"
+      ]
+    },
+    {
+      "id": "UBERON:0001350-caudal-vertebra",
+      "front": "coccyx",
+      "back": "caudal vertebra",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001350"
+      ]
+    },
+    {
+      "id": "UBERON:0001350-bony-pelvis",
+      "front": "coccyx",
+      "back": "bony pelvis",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001350"
+      ]
+    },
+    {
+      "id": "UBERON:0001350-embryonic-post-anal-tail",
+      "front": "coccyx",
+      "back": "embryonic post-anal tail",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001350"
+      ]
+    },
+    {
+      "id": "UBERON:0001423-forelimb-zeugopod-skeleton",
+      "front": "radius bone",
+      "back": "forelimb zeugopod skeleton",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001423"
+      ]
+    },
+    {
+      "id": "UBERON:0001423-radius-cartilage-element",
+      "front": "radius bone",
+      "back": "radius cartilage element",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001423"
+      ]
+    },
+    {
+      "id": "UBERON:0001423-bone-tissue",
+      "front": "radius bone",
+      "back": "bone tissue",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001423"
+      ]
+    },
+    {
+      "id": "UBERON:0001424-bone-tissue",
+      "front": "ulna",
+      "back": "bone tissue",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001424"
+      ]
+    },
+    {
+      "id": "UBERON:0001424-ulna-cartilage-element",
+      "front": "ulna",
+      "back": "ulna cartilage element",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001424"
+      ]
+    },
+    {
+      "id": "UBERON:0001424-forelimb-zeugopod-skeleton",
+      "front": "ulna",
+      "back": "forelimb zeugopod skeleton",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001424"
+      ]
+    },
+    {
+      "id": "UBERON:0001435-carpal-skeleton",
+      "front": "carpal bone",
+      "back": "carpal skeleton",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001435"
+      ]
+    },
+    {
+      "id": "UBERON:0001435-carpus-cartilage-element",
+      "front": "carpal bone",
+      "back": "carpus cartilage element",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001435"
+      ]
+    },
+    {
+      "id": "UBERON:0001435-carpal-region",
+      "front": "carpal bone",
+      "back": "carpal region",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001435"
+      ]
+    },
+    {
+      "id": "UBERON:0001446-hindlimb-zeugopod-skeleton",
+      "front": "fibula",
+      "back": "hindlimb zeugopod skeleton",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001446"
+      ]
+    },
+    {
+      "id": "UBERON:0001446-fibula-cartilage-element",
+      "front": "fibula",
+      "back": "fibula cartilage element",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001446"
+      ]
+    },
+    {
+      "id": "UBERON:0001446-bone-tissue",
+      "front": "fibula",
+      "back": "bone tissue",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001446"
+      ]
+    },
+    {
+      "id": "UBERON:0001447-tarsus-cartilage-element",
+      "front": "tarsal bone",
+      "back": "tarsus cartilage element",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001447"
+      ]
+    },
+    {
+      "id": "UBERON:0001447-tarsal-region",
+      "front": "tarsal bone",
+      "back": "tarsal region",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001447"
+      ]
+    },
+    {
+      "id": "UBERON:0001447-tarsal-skeleton",
+      "front": "tarsal bone",
+      "back": "tarsal skeleton",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001447"
+      ]
+    },
+    {
+      "id": "UBERON:0001676-foramen-magnum",
+      "front": "occipital bone",
+      "back": "foramen magnum",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001676"
+      ]
+    },
+    {
+      "id": "UBERON:0001676-dermatocranium",
+      "front": "occipital bone",
+      "back": "dermatocranium",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001676"
+      ]
+    },
+    {
+      "id": "UBERON:0001676-sclerotome",
+      "front": "occipital bone",
+      "back": "sclerotome",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001676"
+      ]
+    },
+    {
+      "id": "UBERON:0001676-chondrocranium",
+      "front": "occipital bone",
+      "back": "chondrocranium",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001676"
+      ]
+    },
+    {
+      "id": "UBERON:0001676-neurocranium",
+      "front": "occipital bone",
+      "back": "neurocranium",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001676"
+      ]
+    },
+    {
+      "id": "UBERON:0001676-occipital-region",
+      "front": "occipital bone",
+      "back": "occipital region",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001676"
+      ]
+    },
+    {
+      "id": "UBERON:0001677-sphenoid-cartilage-element",
+      "front": "sphenoid bone",
+      "back": "sphenoid cartilage element",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001677"
+      ]
+    },
+    {
+      "id": "UBERON:0001677-splanchnocranium",
+      "front": "sphenoid bone",
+      "back": "splanchnocranium",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001677"
+      ]
+    },
+    {
+      "id": "UBERON:0001677-dermatocranium",
+      "front": "sphenoid bone",
+      "back": "dermatocranium",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001677"
+      ]
+    },
+    {
+      "id": "UBERON:0001677-bone-tissue",
+      "front": "sphenoid bone",
+      "back": "bone tissue",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001677"
+      ]
+    },
+    {
+      "id": "UBERON:0001677-chondrocranium",
+      "front": "sphenoid bone",
+      "back": "chondrocranium",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001677"
+      ]
+    },
+    {
+      "id": "UBERON:0001677-facial-skeleton",
+      "front": "sphenoid bone",
+      "back": "facial skeleton",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001677"
+      ]
+    },
+    {
+      "id": "UBERON:0001678-dermatocranium",
+      "front": "temporal bone",
+      "back": "dermatocranium",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001678"
+      ]
+    },
+    {
+      "id": "UBERON:0001678-chondrocranium",
+      "front": "temporal bone",
+      "back": "chondrocranium",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001678"
+      ]
+    },
+    {
+      "id": "UBERON:0001678-splanchnocranium",
+      "front": "temporal bone",
+      "back": "splanchnocranium",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001678"
+      ]
+    },
+    {
+      "id": "UBERON:0001679-ethmoid-region",
+      "front": "ethmoid bone",
+      "back": "ethmoid region",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001679"
+      ]
+    },
+    {
+      "id": "UBERON:0001679-basicranium",
+      "front": "ethmoid bone",
+      "back": "basicranium",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001679"
+      ]
+    },
+    {
+      "id": "UBERON:0001679-ethmoid-bone-primordium",
+      "front": "ethmoid bone",
+      "back": "ethmoid bone primordium",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001679"
+      ]
+    },
+    {
+      "id": "UBERON:0001679-facial-skeleton",
+      "front": "ethmoid bone",
+      "back": "facial skeleton",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001679"
+      ]
+    },
+    {
+      "id": "UBERON:0001680-dermatocranium",
+      "front": "lacrimal bone",
+      "back": "dermatocranium",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001680"
+      ]
+    },
+    {
+      "id": "UBERON:0001680-orbit-of-skull",
+      "front": "lacrimal bone",
+      "back": "orbit of skull",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001680"
+      ]
+    },
+    {
+      "id": "UBERON:0001680-facial-skeleton",
+      "front": "lacrimal bone",
+      "back": "facial skeleton",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001680"
+      ]
+    },
+    {
+      "id": "UBERON:0001680-preorbital-bone-region",
+      "front": "lacrimal bone",
+      "back": "preorbital bone region",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001680"
+      ]
+    },
+    {
+      "id": "UBERON:0001681-nose",
+      "front": "nasal bone",
+      "back": "nose",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001681"
+      ]
+    },
+    {
+      "id": "UBERON:0001681-dermatocranium",
+      "front": "nasal bone",
+      "back": "dermatocranium",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001681"
+      ]
+    },
+    {
+      "id": "UBERON:0001681-facial-skeleton",
+      "front": "nasal bone",
+      "back": "facial skeleton",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001681"
+      ]
+    },
+    {
+      "id": "UBERON:0001684-jaw-skeleton",
+      "front": "mandible",
+      "back": "jaw skeleton",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001684"
+      ]
+    },
+    {
+      "id": "UBERON:0001685-splanchnocranium",
+      "front": "hyoid bone",
+      "back": "splanchnocranium",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001685"
+      ]
+    },
+    {
+      "id": "UBERON:0001685-pharyngeal-arch-3",
+      "front": "hyoid bone",
+      "back": "pharyngeal arch 3",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001685"
+      ]
+    },
+    {
+      "id": "UBERON:0001685-pharyngeal-arch-2",
+      "front": "hyoid bone",
+      "back": "pharyngeal arch 2",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001685"
+      ]
+    },
+    {
+      "id": "UBERON:0001685-hyoid-apparatus",
+      "front": "hyoid bone",
+      "back": "hyoid apparatus",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0001685"
+      ]
+    },
+    {
+      "id": "UBERON:0002228-rib-cartilage-element",
+      "front": "rib",
+      "back": "rib cartilage element",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0002228"
+      ]
+    },
+    {
+      "id": "UBERON:0002228-bone-tissue",
+      "front": "rib",
+      "back": "bone tissue",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0002228"
+      ]
+    },
+    {
+      "id": "UBERON:0002397-jaw-skeleton",
+      "front": "maxilla",
+      "back": "jaw skeleton",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0002397"
+      ]
+    },
+    {
+      "id": "UBERON:0002397-premaxilla",
+      "front": "maxilla",
+      "back": "premaxilla",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0002397"
+      ]
+    },
+    {
+      "id": "UBERON:0002397-dermatocranium",
+      "front": "maxilla",
+      "back": "dermatocranium",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0002397"
+      ]
+    },
+    {
+      "id": "UBERON:0002397-skeleton-of-upper-jaw",
+      "front": "maxilla",
+      "back": "skeleton of upper jaw",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0002397"
+      ]
+    },
+    {
+      "id": "UBERON:0002397-maxillary-process-mesenchyme-from-neural-crest",
+      "front": "maxilla",
+      "back": "maxillary process mesenchyme from neural crest",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0002397"
+      ]
+    },
+    {
+      "id": "UBERON:0002397-facial-skeleton",
+      "front": "maxilla",
+      "back": "facial skeleton",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0002397"
+      ]
+    },
+    {
+      "id": "UBERON:0002397-preorbital-bone-region",
+      "front": "maxilla",
+      "back": "preorbital bone region",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0002397"
+      ]
+    },
+    {
+      "id": "UBERON:0002412-vertebra-cartilage-element",
+      "front": "vertebra",
+      "back": "vertebra cartilage element",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0002412"
+      ]
+    },
+    {
+      "id": "UBERON:0002412-bone-tissue",
+      "front": "vertebra",
+      "back": "bone tissue",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0002412"
+      ]
+    },
+    {
+      "id": "UBERON:0002412-vertebral-column",
+      "front": "vertebra",
+      "back": "vertebral column",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0002412"
+      ]
+    },
+    {
+      "id": "UBERON:0002446-knee-joint",
+      "front": "patella",
+      "back": "knee joint",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0002446"
+      ]
+    },
+    {
+      "id": "UBERON:0002446-knee",
+      "front": "patella",
+      "back": "knee",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0002446"
+      ]
+    },
+    {
+      "id": "UBERON:0002446-hindlimb-skeleton",
+      "front": "patella",
+      "back": "hindlimb skeleton",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0002446"
+      ]
+    },
+    {
+      "id": "UBERON:0002446-femur",
+      "front": "patella",
+      "back": "femur",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0002446"
+      ]
+    },
+    {
+      "id": "UBERON:0003690-sacral-vertebra",
+      "front": "fused sacrum",
+      "back": "sacral vertebra",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0003690"
+      ]
+    },
+    {
+      "id": "UBERON:0003690-bony-pelvis",
+      "front": "fused sacrum",
+      "back": "bony pelvis",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0003690"
+      ]
+    },
+    {
+      "id": "UBERON:0006849-pectoral-girdle-skeleton",
+      "front": "scapula",
+      "back": "pectoral girdle skeleton",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0006849"
+      ]
+    },
+    {
+      "id": "UBERON:0006849-pectoral-appendage-skeleton",
+      "front": "scapula",
+      "back": "pectoral appendage skeleton",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0006849"
+      ]
+    },
+    {
+      "id": "UBERON:0006849-scapula-cartilage-element",
+      "front": "scapula",
+      "back": "scapula cartilage element",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0006849"
+      ]
+    },
+    {
+      "id": "UBERON:0006849-scapulocoracoid",
+      "front": "scapula",
+      "back": "scapulocoracoid",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0006849"
+      ]
+    },
+    {
+      "id": "UBERON:0006849-bone-tissue",
+      "front": "scapula",
+      "back": "bone tissue",
+      "shape": "plain",
+      "domain": "anatomy",
+      "scope": "skeleton",
+      "bok_references": [
+        "UBERON:0006849"
+      ]
+    }
+  ]
+}

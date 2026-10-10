@@ -31,7 +31,9 @@ with attribution. Full terms: [LICENSE.md](LICENSE.md).
 
 ## Status
 
-The `rdf-owl` adapter builds the "X is part of Y" cards (verified: UBERON terms →
-part_of parents, license carried). Emitting the shipped `skeleton.json` pack is
-open — the curated human-bone IRI list still needs resolving (OLS search is
-slow/rate-limited). No pack JSON is committed here yet.
+Shipped. `packs/skeleton.json` holds 109 "X is part of Y" cards across 29
+human skeletal bone terms. Each card's `id` is `UBERON:<term>-<parent-slug>`,
+unique per (term, parent), so the JSON importer keeps every card (a bare
+`obo_id` would collide across parents and be dropped as a duplicate). Verified
+end-to-end: the pack imports cleanly through `JsonDeckParser` (109 cards, text
+fronts present).
