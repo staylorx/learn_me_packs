@@ -34,7 +34,6 @@ come back the same deck.
 ```json
 {
   "deck": "us-skeleton",
-  "algorithm": "sm2",
   "domain": "skeleton",
   "source_license": "CC0-1.0",
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",

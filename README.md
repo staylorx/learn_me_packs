@@ -29,8 +29,7 @@ locked by [`manifest.schema.json`](manifest.schema.json).
       "age": "16+",
       "license": "CC0-1.0",
       "cards": 423,
-      "algorithm": "sm2",
-      "source": "NCVEC FCC Technician Question Pool (2018-2022)",
+          "source": "NCVEC FCC Technician Question Pool (2018-2022)",
       "source_url": "https://www.ncvec.org/index.php/amateur-question-pools"
     }
   ]

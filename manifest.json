@@ -16,7 +16,6 @@
       "age": "16+",
       "license": "CC0-1.0",
       "cards": 622,
-      "algorithm": "sm2",
       "source": "NCVEC FCC Extra Question Pool (2020-2024)",
       "source_url": "https://www.ncvec.org/index.php/amateur-question-pools"
     },
@@ -34,7 +33,6 @@
       "age": "16+",
       "license": "CC0-1.0",
       "cards": 454,
-      "algorithm": "sm2",
       "source": "NCVEC FCC General Question Pool (2019-2023)",
       "source_url": "https://www.ncvec.org/index.php/amateur-question-pools"
     },
@@ -52,7 +50,6 @@
       "age": "16+",
       "license": "CC0-1.0",
       "cards": 109,
-      "algorithm": "sm2",
       "source": "UBERON anatomy ontology (human skeletal bones)",
       "source_url": "https://www.ebi.ac.uk/ols4/ontologies/uberon"
     },
@@ -70,7 +67,6 @@
       "age": "16+",
       "license": "CC0-1.0",
       "cards": 423,
-      "algorithm": "sm2",
       "source": "NCVEC FCC Technician Question Pool (2018-2022)",
       "source_url": "https://www.ncvec.org/index.php/amateur-question-pools"
     }

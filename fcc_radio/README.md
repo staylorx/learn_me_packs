@@ -35,7 +35,6 @@ come back the same deck.
 ```json
 {
   "deck": "us-extra-2020-2024",
-  "algorithm": "sm2",
   "domain": "Extra",
   "source_license": "CC0-1.0",
   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",

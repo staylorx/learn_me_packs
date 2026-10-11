@@ -54,10 +54,6 @@
             "type": "integer",
             "description": "Number of cards in the pack."
           },
-          "algorithm": {
-            "type": "string",
-            "description": "The deck's scheduling algorithm (sm2, fsrs, naive)."
-          },
           "source": {
             "type": "string",
             "description": "Human-readable source corpus name (the DeckDocument `source`)."
