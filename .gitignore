@@ -1,7 +1,15 @@
+# IDE
+.idea/
+*.iml
+
 # Build / transient output
 build/
 .dart_tool/
 pubspec.lock
+
+# Logs
+*.log
+.logs/
 
 # Local-only copyrighted test decks (never committed/redistributed)
 *.apkg
