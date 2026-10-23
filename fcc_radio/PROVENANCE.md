@@ -37,6 +37,15 @@ bytes ride as a sibling `figure` media object.
 - Each pack record: `source_license`, `license_url`, `source`, `provenance`.
   See [LICENSE.md](LICENSE.md).
 
+## Re-emission record
+
+- 2026-10-22: re-emitted all three packs from the same BaksiLi pools after the
+  engine's option format changed — an option states whether it answers the
+  question (`correct`) instead of the points it earned (`score`). Card counts,
+  ids, order, figures and the manifest rows are unchanged; the diff is the option
+  key alone. The reader no longer accepts a `score`, so an un-rebuilt pack would
+  import with no option marked correct.
+
 ## License
 
 The converted packs are `CC0-1.0` (public domain). The underlying pool text is a

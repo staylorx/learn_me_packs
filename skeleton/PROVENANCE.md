@@ -24,6 +24,19 @@ added or rewritten by hand.
 - Deck id: `us-skeleton`.
 - License: `CC0-1.0` (derived from CC-BY-3.0 UBERON, with attribution).
 
+## Retired key, deliberately not re-emitted
+
+Each card in this pack still carries a `shape` field from before the engine
+retired that concept (a card declares no kind now: its options, or their absence,
+are what it is). The importer ignores an unknown key, so the pack works as it is,
+and it was left byte-identical on purpose: re-emitting it through the builder
+keeps all 109 cards but **changes their ids** (measured 2026-10-22), and an id
+change is how a re-import loses the review history the ids exist to preserve.
+
+So the stale key stays until there is a reason to regenerate the pack properly —
+which means rebuilding from the UBERON term list recorded above, not round-tripping
+the file.
+
 ## License
 
 The converted pack is `CC0-1.0` (public domain), derived from CC-BY-3.0 UBERON
