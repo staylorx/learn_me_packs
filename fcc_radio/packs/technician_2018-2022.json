@@ -43,28 +43,7 @@
     {
       "id": "T0A02",
       "front": "What health hazard is presented by electrical current flowing through the body?",
-      "options": [
-        {
-          "label": "A",
-          "text": "It may cause injury by heating tissue",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "It may disrupt the electrical functions of cells",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "It may cause involuntary muscle contractions",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All of these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "It may cause injury by heating tissue\nIt may disrupt the electrical functions of cells\nIt may cause involuntary muscle contractions",
       "domain": "T0A",
       "scope": "T0A"
     },
@@ -155,28 +134,7 @@
     {
       "id": "T0A06",
       "front": "What is a good way to guard against electrical shock at your station?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Use three-wire cords and plugs for all AC powered equipment",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "Connect all AC powered station equipment to a common safety ground",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Use a circuit protected by a ground-fault interrupter",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All of these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Use three-wire cords and plugs for all AC powered equipment\nConnect all AC powered station equipment to a common safety ground\nUse a circuit protected by a ground-fault interrupter",
       "domain": "T0A",
       "scope": "T0A"
     },
@@ -771,28 +729,7 @@
     {
       "id": "T0C04",
       "front": "What factors affect the RF exposure of people near an amateur station antenna?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Frequency and power level of the RF field",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "Distance from the antenna to a person",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Radiation pattern of the antenna",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All of these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Frequency and power level of the RF field\nDistance from the antenna to a person\nRadiation pattern of the antenna",
       "domain": "T0C",
       "scope": "T0C"
     },
@@ -827,28 +764,7 @@
     {
       "id": "T0C06",
       "front": "Which of the following is an acceptable method to determine that your station complies with FCC RF exposure regulations?",
-      "options": [
-        {
-          "label": "A",
-          "text": "By calculation based on FCC OET Bulletin 65",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "By calculation based on computer modeling",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "By measurement of field strength using calibrated equipment",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All of these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "By calculation based on FCC OET Bulletin 65\nBy calculation based on computer modeling\nBy measurement of field strength using calibrated equipment",
       "domain": "T0C",
       "scope": "T0C"
     },
@@ -1330,28 +1246,7 @@
     {
       "id": "T1A10",
       "front": "Which of the following describes the Radio Amateur Civil Emergency Service (RACES)?",
-      "options": [
-        {
-          "label": "A",
-          "text": "A radio service using amateur frequencies for emergency management or civil defense communications",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "A radio service using amateur stations for emergency management or civil defense communications",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "An emergency service using amateur operators certified by a civil defense organization as being enrolled in that organization",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All of these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "A radio service using amateur frequencies for emergency management or civil defense communications\nA radio service using amateur stations for emergency management or civil defense communications\nAn emergency service using amateur operators certified by a civil defense organization as being enrolled in that organization",
       "domain": "T1A",
       "scope": "T1A",
       "bok_references": [
@@ -1637,28 +1532,7 @@
     {
       "id": "T1B09",
       "front": "Why should you not set your transmit frequency to be exactly at the edge of an amateur band or sub-band?",
-      "options": [
-        {
-          "label": "A",
-          "text": "To allow for calibration error in the transmitter frequency display",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "So that modulation sidebands do not extend beyond the band edge",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "To allow for transmitter frequency drift",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All of these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "To allow for calibration error in the transmitter frequency display\nSo that modulation sidebands do not extend beyond the band edge\nTo allow for transmitter frequency drift",
       "domain": "T1B",
       "scope": "T1B",
       "bok_references": [
@@ -2688,28 +2562,7 @@
     {
       "id": "T1E09",
       "front": "Which of the following is true of remote control operation?",
-      "options": [
-        {
-          "label": "A",
-          "text": "The control operator must be at the control point",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "A control operator is required at all times",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "The control operator indirectly manipulates the controls",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All of these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "The control operator must be at the control point\nA control operator is required at all times\nThe control operator indirectly manipulates the controls",
       "domain": "T1E",
       "scope": "T1E",
       "bok_references": [
@@ -2936,28 +2789,7 @@
     {
       "id": "T1F06",
       "front": "Which of the following formats of a self-assigned indicator is acceptable when identifying using a phone transmission?",
-      "options": [
-        {
-          "label": "A",
-          "text": "KL7CC stroke W3",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "KL7CC slant W3",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "KL7CC slash W3",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All of these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "KL7CC stroke W3\nKL7CC slant W3\nKL7CC slash W3",
       "domain": "T1F",
       "scope": "T1F",
       "bok_references": [
@@ -3430,28 +3262,7 @@
     {
       "id": "T2A12",
       "front": "Which of the following is a guideline when choosing an operating frequency for calling CQ?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Listen first to be sure that no one else is using the frequency",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "Ask if the frequency is in use",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Make sure you are in your assigned band",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All of these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Listen first to be sure that no one else is using the frequency\nAsk if the frequency is in use\nMake sure you are in your assigned band",
       "domain": "T2A",
       "scope": "T2A"
     },
@@ -3542,28 +3353,7 @@
     {
       "id": "T2B04",
       "front": "Which of the following could be the reason you are unable to access a repeater whose output you can hear?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Improper transceiver offset",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "The repeater may require a proper CTCSS tone from your transceiver",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "The repeater may require a proper DCS tone from your transceiver",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All of these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Improper transceiver offset\nThe repeater may require a proper CTCSS tone from your transceiver\nThe repeater may require a proper DCS tone from your transceiver",
       "domain": "T2B",
       "scope": "T2B"
     },
@@ -5169,56 +4959,14 @@
     {
       "id": "T4A01",
       "front": "What must be considered to determine the minimum current capacity needed for a transceiver power supply?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Efficiency of the transmitter at full power output",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "Receiver and control circuit power",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Power supply regulation and heat dissipation",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All of these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Efficiency of the transmitter at full power output\nReceiver and control circuit power\nPower supply regulation and heat dissipation",
       "domain": "T4A",
       "scope": "T4A"
     },
     {
       "id": "T4A02",
       "front": "How might a computer be used as part of an amateur radio station?",
-      "options": [
-        {
-          "label": "A",
-          "text": "For logging contacts and contact information",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "For sending and/or receiving CW",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "For generating and decoding digital signals",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All of these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "For logging contacts and contact information\nFor sending and/or receiving CW\nFor generating and decoding digital signals",
       "domain": "T4A",
       "scope": "T4A"
     },
@@ -7689,28 +7437,7 @@
     {
       "id": "T6A10",
       "front": "Which of the following battery types is rechargeable?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Nickel-metal hydride",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "Lithium-ion",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Lead-acid gel-cell",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All of these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Nickel-metal hydride\nLithium-ion\nLead-acid gel-cell",
       "domain": "T6A",
       "scope": "T6A"
     },
@@ -9189,28 +8916,7 @@
     {
       "id": "T7B03",
       "front": "Which of the following can cause radio frequency interference?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Fundamental overload",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "Harmonics",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Spurious emissions",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All of these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Fundamental overload\nHarmonics\nSpurious emissions",
       "domain": "T7B",
       "scope": "T7B"
     },
@@ -9329,28 +9035,7 @@
     {
       "id": "T7B08",
       "front": "What should you do if something in a neighbor’s home is causing harmful interference to your amateur station?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Work with your neighbor to identify the offending device",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "Politely inform your neighbor about the rules that prohibit the use of devices that cause interference",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Check your station and make sure it meets the standards of good amateur practice",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All of these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Work with your neighbor to identify the offending device\nPolitely inform your neighbor about the rules that prohibit the use of devices that cause interference\nCheck your station and make sure it meets the standards of good amateur practice",
       "domain": "T7B",
       "scope": "T7B"
     },
@@ -9385,28 +9070,7 @@
     {
       "id": "T7B10",
       "front": "What might be a problem if you receive a report that your audio signal through the repeater is distorted or unintelligible?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Your transmitter is slightly off frequency",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "Your batteries are running low",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "You are in a bad location",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All of these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Your transmitter is slightly off frequency\nYour batteries are running low\nYou are in a bad location",
       "domain": "T7B",
       "scope": "T7B"
     },
@@ -10505,56 +10169,14 @@
     {
       "id": "T8B03",
       "front": "Which of the following are provided by satellite tracking programs?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Maps showing the real-time position of the satellite track over the earth",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "The time, azimuth, and elevation of the start, maximum altitude, and end of a pass",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "The apparent frequency of the satellite transmission, including effects of Doppler shift",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All of these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Maps showing the real-time position of the satellite track over the earth\nThe time, azimuth, and elevation of the start, maximum altitude, and end of a pass\nThe apparent frequency of the satellite transmission, including effects of Doppler shift",
       "domain": "T8B",
       "scope": "T8B"
     },
     {
       "id": "T8B04",
       "front": "What mode of transmission is commonly used by amateur radio satellites?",
-      "options": [
-        {
-          "label": "A",
-          "text": "SSB",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "FM",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "CW/data",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All of these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "SSB\nFM\nCW/data",
       "domain": "T8B",
       "scope": "T8B"
     },
@@ -11009,28 +10631,7 @@
     {
       "id": "T8C09",
       "front": "How might you obtain a list of active nodes that use VoIP?",
-      "options": [
-        {
-          "label": "A",
-          "text": "By subscribing to an on line service",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "From on line repeater lists maintained by the local repeater frequency coordinator",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "From a repeater directory",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All of these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "By subscribing to an on line service\nFrom on line repeater lists maintained by the local repeater frequency coordinator\nFrom a repeater directory",
       "domain": "T8C",
       "scope": "T8C"
     },
@@ -11093,28 +10694,7 @@
     {
       "id": "T8D01",
       "front": "Which of the following is a digital communications mode?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Packet radio",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "IEEE 802.11",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "JT65",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All of these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Packet radio\nIEEE 802.11\nJT65",
       "domain": "T8D",
       "scope": "T8D"
     },
@@ -11289,28 +10869,7 @@
     {
       "id": "T8D08",
       "front": "Which of the following may be included in packet transmissions?",
-      "options": [
-        {
-          "label": "A",
-          "text": "A check sum that permits error detection",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "A header that contains the call sign of the station to which the information is being sent",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Automatic repeat request in case of error",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All of these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "A check sum that permits error detection\nA header that contains the call sign of the station to which the information is being sent\nAutomatic repeat request in case of error",
       "domain": "T8D",
       "scope": "T8D"
     },
@@ -11345,28 +10904,7 @@
     {
       "id": "T8D10",
       "front": "Which of the following operating activities is supported by digital mode software in the WSJT suite?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Moonbounce or Earth-Moon-Earth",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "Weak-signal propagation beacons",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Meteor scatter",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All of these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Moonbounce or Earth-Moon-Earth\nWeak-signal propagation beacons\nMeteor scatter",
       "domain": "T8D",
       "scope": "T8D"
     },

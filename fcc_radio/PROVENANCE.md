@@ -45,6 +45,14 @@ bytes ride as a sibling `figure` media object.
   ids, order, figures and the manifest rows are unchanged; the diff is the option
   key alone. The reader no longer accepts a `score`, so an un-rebuilt pack would
   import with no option marked correct.
+- 2026-10-22 (second re-emission): the pool's meta-answer. Twenty-two Technician
+  cards answer with "All of these choices are correct" (T0A02 among them — the
+  health hazard of current through the body). Emitted as multiple-choice items,
+  each marked three true statements false and left a flip that named none of them:
+  the option list *was* the answer. They are answer cards now — no options, the
+  branches listed one per line. Card counts, ids, order, domains and figures are
+  unchanged, and General and Extra came out byte-identical, their pools not using
+  the family.
 
 ## License
 
