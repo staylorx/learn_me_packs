@@ -67,6 +67,19 @@ bytes ride as a sibling `figure` media object.
   answer card with the branches one per line, and no meta-option is marked
   correct anywhere in the corpus. Card counts, ids, order, domains, figures and
   the manifest rows are unchanged.
+- 2026-11-05 (fourth re-emission): the deck-level `domain` is gone. It was the
+  *first* card's domain written at the top of the file — an artifact of arrival
+  order, read by nothing on either side, and the one key in the deck-level block
+  the learn_me engine did not model. That mattered beyond tidiness: the engine's
+  reader and writer each keep their own list of deck-level keys, so a key no
+  reader modelled could not survive an import-then-export at all, and the block
+  as a whole was being dropped (`source`, `license_url` and `provenance` too).
+  The engine now models the block (a `DeckProvenance` on the deck, read on
+  import and written back on export), so what is left here is exactly what a
+  reader knows, and the README's promise — the terms travel with the data even
+  when the engine re-exports it — holds. All three packs change on that one
+  removed line; counts, ids, order, cards, figures and the manifest rows are
+  unchanged.
 
 ## License
 
