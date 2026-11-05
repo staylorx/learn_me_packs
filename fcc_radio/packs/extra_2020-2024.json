@@ -155,28 +155,7 @@
     {
       "id": "E0A06",
       "front": "Why are there separate electric (E) and magnetic (H) field MPE limits?",
-      "options": [
-        {
-          "label": "A",
-          "text": "The body reacts to electromagnetic radiation from both the E and H fields",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "Ground reflections and scattering make the field strength vary with location",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "E field and H field radiation intensity peaks can occur at different locations",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "The body reacts to electromagnetic radiation from both the E and H fields\nGround reflections and scattering make the field strength vary with location\nE field and H field radiation intensity peaks can occur at different locations",
       "domain": "E0A",
       "scope": "E0A"
     },
@@ -1678,28 +1657,7 @@
     {
       "id": "E1D05",
       "front": "What must be posted at the station location of a station being operated by telecommand on or within 50 km of the earth's surface?",
-      "options": [
-        {
-          "label": "A",
-          "text": "A photocopy of the station license",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "A label with the name, address, and telephone number of the station licensee",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "A label with the name, address, and telephone number of the control operator",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "A photocopy of the station license\nA label with the name, address, and telephone number of the station licensee\nA label with the name, address, and telephone number of the control operator",
       "domain": "E1D",
       "scope": "E1D",
       "bok_references": [
@@ -2546,28 +2504,7 @@
     {
       "id": "E1F09",
       "front": "Which of the following conditions apply when transmitting spread spectrum emissions?",
-      "options": [
-        {
-          "label": "A",
-          "text": "A station transmitting SS emission must not cause harmful interference to other stations employing other authorized emissions",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "The transmitting station must be in an area regulated by the FCC or in a country that permits SS emissions",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "The transmission must not be used to obscure the meaning of any communication",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "A station transmitting SS emission must not cause harmful interference to other stations employing other authorized emissions\nThe transmitting station must be in an area regulated by the FCC or in a country that permits SS emissions\nThe transmission must not be used to obscure the meaning of any communication",
       "domain": "E1F",
       "scope": "E1F",
       "bok_references": [
@@ -2667,28 +2604,7 @@
     {
       "id": "E2A02",
       "front": "Which of the following occurs when a satellite is using an inverted linear transponder?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Doppler shift is reduced because the uplink and downlink shifts are in opposite directions",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "Signal position in the band is reversed",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Upper sideband on the uplink becomes lower sideband on the downlink, and vice versa",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Doppler shift is reduced because the uplink and downlink shifts are in opposite directions\nSignal position in the band is reversed\nUpper sideband on the uplink becomes lower sideband on the downlink, and vice versa",
       "domain": "E2A",
       "scope": "E2A"
     },
@@ -2807,28 +2723,7 @@
     {
       "id": "E2A07",
       "front": "Which of the following types of signals can be relayed through a linear transponder?",
-      "options": [
-        {
-          "label": "A",
-          "text": "FM and CW",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "SSB and SSTV",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "PSK and packet",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "FM and CW\nSSB and SSTV\nPSK and packet",
       "domain": "E2A",
       "scope": "E2A"
     },
@@ -3591,28 +3486,7 @@
     {
       "id": "E2C10",
       "front": "Why might a DX station state that they are listening on another frequency?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Because the DX station may be transmitting on a frequency that is prohibited to some responding stations",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "To separate the calling stations from the DX station",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "To improve operating efficiency by reducing interference",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Because the DX station may be transmitting on a frequency that is prohibited to some responding stations\nTo separate the calling stations from the DX station\nTo improve operating efficiency by reducing interference",
       "domain": "E2C",
       "scope": "E2C"
     },
@@ -3703,28 +3577,7 @@
     {
       "id": "E2D02",
       "front": "Which of the following is a good technique for making meteor scatter contacts?",
-      "options": [
-        {
-          "label": "A",
-          "text": "15-second timed transmission sequences with stations alternating based on location",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "Use of special digital modes",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Short transmissions with rapidly repeated call signs and signal reports",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "15-second timed transmission sequences with stations alternating based on location\nUse of special digital modes\nShort transmissions with rapidly repeated call signs and signal reports",
       "domain": "E2D",
       "scope": "E2D"
     },
@@ -4151,28 +4004,7 @@
     {
       "id": "E2E07",
       "front": "Which of the following is a possible reason that attempts to initiate contact with a digital station on a clear frequency are unsuccessful?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Your transmit frequency is incorrect",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "The protocol version you are using is not supported by the digital station",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Another station you are unable to hear is using the frequency",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Your transmit frequency is incorrect\nThe protocol version you are using is not supported by the digital station\nAnother station you are unable to hear is using the frequency",
       "domain": "E2E",
       "scope": "E2E"
     },
@@ -6083,28 +5915,7 @@
     {
       "id": "E4B11",
       "front": "Which of the following can be measured with a vector network analyzer?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Input impedance",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "Output impedance",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Reflection coefficient",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Input impedance\nOutput impedance\nReflection coefficient",
       "domain": "E4B",
       "scope": "E4B"
     },
@@ -6895,28 +6706,7 @@
     {
       "id": "E4E02",
       "front": "Which of the following types of noise can often be reduced with a digital signal processing noise filter?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Broadband white noise",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "Ignition noise",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Power line noise",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Broadband white noise\nIgnition noise\nPower line noise",
       "domain": "E4E",
       "scope": "E4E"
     },
@@ -7119,28 +6909,7 @@
     {
       "id": "E4E10",
       "front": "What might be the cause of a loud roaring or buzzing AC line interference that comes and goes at intervals?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Arcing contacts in a thermostatically controlled device",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "A defective doorbell or doorbell transformer inside a nearby residence",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "A malfunctioning illuminated advertising display",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Arcing contacts in a thermostatically controlled device\nA defective doorbell or doorbell transformer inside a nearby residence\nA malfunctioning illuminated advertising display",
       "domain": "E4E",
       "scope": "E4E"
     },
@@ -10337,28 +10106,7 @@
     {
       "id": "E6E10",
       "front": "What advantage does surface-mount technology offer at RF compared to using through-hole components?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Smaller circuit area",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "Shorter circuit-board traces",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Components have less parasitic inductance and capacitance",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Smaller circuit area\nShorter circuit-board traces\nComponents have less parasitic inductance and capacitance",
       "domain": "E6E",
       "scope": "E6E"
     },
@@ -12277,28 +12025,7 @@
     {
       "id": "E7D14",
       "front": "What is the purpose of connecting equal-value resistors across power supply filter capacitors connected in series?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Equalize the voltage across each capacitor",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "Discharge the capacitors when voltage is removed",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Provide a minimum load on the supply",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Equalize the voltage across each capacitor\nDischarge the capacitors when voltage is removed\nProvide a minimum load on the supply",
       "domain": "E7D",
       "scope": "E7D"
     },
@@ -13729,28 +13456,7 @@
     {
       "id": "E7H13",
       "front": "Which of the following is a technique for providing highly accurate and stable oscillators needed for microwave transmission and reception?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Use a GPS signal reference",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "Use a rubidium stabilized reference oscillator",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Use a temperature-controlled high Q dielectric resonator",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Use a GPS signal reference\nUse a rubidium stabilized reference oscillator\nUse a temperature-controlled high Q dielectric resonator",
       "domain": "E7H",
       "scope": "E7H"
     },
@@ -17013,28 +16719,7 @@
     {
       "id": "E9F08",
       "front": "Which of the following is a significant difference between foam dielectric coaxial cable and solid dielectric cable, assuming all other parameters are the same?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Foam dielectric has lower safe operating voltage limits",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "Foam dielectric has lower loss per unit of length",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Foam dielectric has higher velocity factor",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Foam dielectric has lower safe operating voltage limits\nFoam dielectric has lower loss per unit of length\nFoam dielectric has higher velocity factor",
       "domain": "E9F",
       "scope": "E9F"
     },

@@ -53,6 +53,20 @@ bytes ride as a sibling `figure` media object.
   branches listed one per line. Card counts, ids, order, domains and figures are
   unchanged, and General and Extra came out byte-identical, their pools not using
   the family.
+- 2026-11-05 (third re-emission): the entry above was wrong about General and
+  Extra — their pools use the same meta-answer, spelled "All these choices are
+  correct" (no "of"). The builder recognised the family by a list of exact
+  spellings that held Technician's wording but not this one, so sixteen General
+  cards (G0A02, G0A03, G1A10, G1B08, G1E04, G2E03, G2E14, G3B02, G4A15, G4D03,
+  G4E07, G5A10, G6A08, G6A13, G8A06, G9C10) and fifteen Extra cards shipped as
+  ordinary choices whose answer read "D. All these choices are correct" and named
+  none of the true statements. The check is a pattern now
+  (`all (of) these/the (choices/above) [are correct]`), not a spelling list, and
+  all three packs are re-emitted from the same BaksiLi pools. Technician is
+  byte-identical; General and Extra change on those 31 cards alone — each is an
+  answer card with the branches one per line, and no meta-option is marked
+  correct anywhere in the corpus. Card counts, ids, order, domains, figures and
+  the manifest rows are unchanged.
 
 ## License
 

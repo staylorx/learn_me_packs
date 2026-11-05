@@ -43,56 +43,14 @@
     {
       "id": "G0A02",
       "front": "Which of the following properties is important in estimating whether an RF signal exceeds the maximum permissible exposure (MPE)?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Its duty cycle",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "Its frequency",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Its power density",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Its duty cycle\nIts frequency\nIts power density",
       "domain": "G0A",
       "scope": "G0A"
     },
     {
       "id": "G0A03",
       "front": "How can you determine that your station complies with FCC RF exposure regulations?",
-      "options": [
-        {
-          "label": "A",
-          "text": "By calculation based on FCC OET Bulletin 65",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "By calculation based on computer modeling",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "By measurement of field strength using calibrated equipment",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "By calculation based on FCC OET Bulletin 65\nBy calculation based on computer modeling\nBy measurement of field strength using calibrated equipment",
       "domain": "G0A",
       "scope": "G0A",
       "bok_references": [
@@ -997,28 +955,7 @@
     {
       "id": "G1A10",
       "front": "Which of the following frequencies is available to a control operator holding a General class license?",
-      "options": [
-        {
-          "label": "A",
-          "text": "28.020 MHz",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "28.350 MHz",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "28.550 MHz",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "28.020 MHz\n28.350 MHz\n28.550 MHz",
       "domain": "G1A",
       "scope": "G1A",
       "bok_references": [
@@ -1400,28 +1337,7 @@
     {
       "id": "G1B08",
       "front": "When choosing a transmitting frequency, what should you do to comply with good amateur practice?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Ensure that the frequency and mode selected are within your license class privileges",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "Follow generally accepted band plans agreed to by the Amateur Radio community",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Monitor the frequency before transmitting",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Ensure that the frequency and mode selected are within your license class privileges\nFollow generally accepted band plans agreed to by the Amateur Radio community\nMonitor the frequency before transmitting",
       "domain": "G1B",
       "scope": "G1B",
       "bok_references": [
@@ -2454,28 +2370,7 @@
     {
       "id": "G1E04",
       "front": "Which of the following conditions require a licensed Amateur Radio operator to take specific steps to avoid harmful interference to other users or facilities?",
-      "options": [
-        {
-          "label": "A",
-          "text": "When operating within one mile of an FCC Monitoring Station",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "When using a band where the Amateur Service is secondary",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "When a station is transmitting spread spectrum emissions",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "When operating within one mile of an FCC Monitoring Station\nWhen using a band where the Amateur Service is secondary\nWhen a station is transmitting spread spectrum emissions",
       "domain": "G1E",
       "scope": "G1E",
       "bok_references": [
@@ -4030,28 +3925,7 @@
     {
       "id": "G2E03",
       "front": "What symptoms may result from other signals interfering with a PACTOR or WINMOR transmission?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Frequent retries or timeouts",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "Long pauses in message transmission",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Failure to establish a connection between stations",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Frequent retries or timeouts\nLong pauses in message transmission\nFailure to establish a connection between stations",
       "domain": "G2E",
       "scope": "G2E"
     },
@@ -4338,28 +4212,7 @@
     {
       "id": "G2E14",
       "front": "What could be wrong if you cannot decode an RTTY or other FSK signal even though it is apparently tuned in properly?",
-      "options": [
-        {
-          "label": "A",
-          "text": "The mark and space frequencies may be reversed",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "You may have selected the wrong baud rate",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "You may be listening on the wrong sideband",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "The mark and space frequencies may be reversed\nYou may have selected the wrong baud rate\nYou may be listening on the wrong sideband",
       "domain": "G2E",
       "scope": "G2E"
     },
@@ -4814,28 +4667,7 @@
     {
       "id": "G3B02",
       "front": "What factors affect the MUF?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Path distance and location",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "Time of day and season",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Solar radiation and ionospheric disturbances",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Path distance and location\nTime of day and season\nSolar radiation and ionospheric disturbances",
       "domain": "G3B",
       "scope": "G3B"
     },
@@ -5794,28 +5626,7 @@
     {
       "id": "G4A15",
       "front": "Which of the following can be a symptom of transmitted RF being picked up by an audio cable carrying AFSK data signals between a computer and a transceiver?",
-      "options": [
-        {
-          "label": "A",
-          "text": "The VOX circuit does not un-key the transmitter",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "The transmitter signal is distorted",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Frequent connection timeouts",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "The VOX circuit does not un-key the transmitter\nThe transmitter signal is distorted\nFrequent connection timeouts",
       "domain": "G4A",
       "scope": "G4A"
     },
@@ -6718,28 +6529,7 @@
     {
       "id": "G4D03",
       "front": "Which of the following can be the result of an incorrectly adjusted speech processor?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Distorted speech",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "Splatter",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Excessive background pickup",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Distorted speech\nSplatter\nExcessive background pickup",
       "domain": "G4D",
       "scope": "G4D"
     },
@@ -7138,28 +6928,7 @@
     {
       "id": "G4E07",
       "front": "Which of the following may cause receive interference in a radio installed in a vehicle?",
-      "options": [
-        {
-          "label": "A",
-          "text": "The battery charging system",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "The fuel delivery system",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "The vehicle control computer",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "The battery charging system\nThe fuel delivery system\nThe vehicle control computer",
       "domain": "G4E",
       "scope": "G4E"
     },
@@ -7530,28 +7299,7 @@
     {
       "id": "G5A10",
       "front": "Which of the following devices can be used for impedance matching at radio frequencies?",
-      "options": [
-        {
-          "label": "A",
-          "text": "A transformer",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "A Pi-network",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "A length of transmission line",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "A transformer\nA Pi-network\nA length of transmission line",
       "domain": "G5A",
       "scope": "G5A"
     },
@@ -8678,28 +8426,7 @@
     {
       "id": "G6A08",
       "front": "What is an advantage of using a ferrite core toroidal inductor?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Large values of inductance may be obtained",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "The magnetic properties of the core may be optimized for a specific range of frequencies",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Most of the magnetic field is contained in the core",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Large values of inductance may be obtained\nThe magnetic properties of the core may be optimized for a specific range of frequencies\nMost of the magnetic field is contained in the core",
       "domain": "G6A",
       "scope": "G6A"
     },
@@ -8818,28 +8545,7 @@
     {
       "id": "G6A13",
       "front": "Why is the polarity of applied voltages important for polarized capacitors?",
-      "options": [
-        {
-          "label": "A",
-          "text": "Incorrect polarity can cause the capacitor to short-circuit",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "Reverse voltages can destroy the dielectric layer of an electrolytic capacitor",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "The capacitor could overheat and explode",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "Incorrect polarity can cause the capacitor to short-circuit\nReverse voltages can destroy the dielectric layer of an electrolytic capacitor\nThe capacitor could overheat and explode",
       "domain": "G6A",
       "scope": "G6A"
     },
@@ -10528,28 +10234,7 @@
     {
       "id": "G8A06",
       "front": "Which of the following is characteristic of QPSK31?",
-      "options": [
-        {
-          "label": "A",
-          "text": "It is sideband sensitive",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "Its encoding provides error correction",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "Its bandwidth is approximately the same as BPSK31",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "It is sideband sensitive\nIts encoding provides error correction\nIts bandwidth is approximately the same as BPSK31",
       "domain": "G8A",
       "scope": "G8A"
     },
@@ -12404,28 +12089,7 @@
     {
       "id": "G9C10",
       "front": "Which of the following can be adjusted to optimize forward gain, front-to-back ratio, or SWR bandwidth of a Yagi antenna?",
-      "options": [
-        {
-          "label": "A",
-          "text": "The physical length of the boom",
-          "correct": false
-        },
-        {
-          "label": "B",
-          "text": "The number of elements on the boom",
-          "correct": false
-        },
-        {
-          "label": "C",
-          "text": "The spacing of each element along the boom",
-          "correct": false
-        },
-        {
-          "label": "D",
-          "text": "All these choices are correct",
-          "correct": true
-        }
-      ],
+      "back": "The physical length of the boom\nThe number of elements on the boom\nThe spacing of each element along the boom",
       "domain": "G9C",
       "scope": "G9C"
     },
