@@ -1,52 +1,80 @@
 # Provenance — skeleton pack
 
-Every card in this pack is a "X is part of Y" fact derived from the **UBERON
-anatomy ontology** (the `part_of` relationship, BFO:0000050). The conversion is
-mechanical (fetch term → fetch part_of parents → emit card); no content was
-added or rewritten by hand.
+## What the deck is
 
-## Source
+An illustrated deck of **human skeletal anatomy**: the `part_of` hierarchy of
+the skeleton, one fact per card, in three atomic shapes — *locate* ("The sternum
+is part of which structure?"), *clue* ("Which flat bone runs down the middle of
+the chest…?") and *members* (a cloze linking two members of a region) — with a
+public-domain anatomy plate on each structure's locate card.
 
-- **Ontology:** UBERON (Uberon Multi-species Anatomy Ontology)
-- **Served by:** EMBL-EBI Ontology Lookup Service (OLS)
+## Sources
+
+### UBERON anatomy ontology — CC-BY-3.0
+
+- **Ontology:** UBERON (Uberon Multi-species Anatomy Ontology), served by the
+  EMBL-EBI Ontology Lookup Service —
   `https://www.ebi.ac.uk/ols4/ontologies/uberon`
-- **License:** CC-BY-3.0 (Attribution 3.0 Unported)
+- **License:** CC-BY-3.0 (Attribution 3.0 Unported) —
   https://creativecommons.org/licenses/by/3.0/
-- **Term source:** each card's `source` is the UBERON term IRI
-  (e.g. `http://purl.obolibrary.org/obo/UBERON_0000976`); `bok_references`
-  carries the `UBERON:xxxx` id.
+- **Relation used:** `part_of` (BFO:0000050).
+- **What was used:** the structure list and the containing-structure relation.
+  Each card's `bok_references` carries the `UBERON:xxxx` id the structure came
+  from.
+- **Curation (this is a derivative, and the changes are these):** UBERON's
+  `part_of` assertions mix the anatomical parent with developmental nodes
+  (cartilage elements, primordia, the sclerotome, "bone tissue") and broad
+  groupings, and some of them are asserted in a direction anatomy does not read
+  (UBERON carries `sternum part_of rib`). The deck keeps the **immediate
+  anatomical parent** only, drops the developmental and broad parents, and
+  phrases every relation explicitly.
+
+### Gray's Anatomy of the Human Body (1918) — public domain
+
+- **Plates:** fetched from Wikimedia Commons via `Special:FilePath` at 560 px
+  (`https://commons.wikimedia.org/wiki/Category:Gray%27s_Anatomy_plates`).
+- **License:** public domain (published 1918).
+- **Processing:** flattened on white, greyscaled, resized to at most 640 px wide,
+  and reduced to a 16-colour palette PNG (line art, so this is near-lossless and
+  keeps the bytes small — the pictures travel inline in the deck document).
+- Each plate carries a caption naming the structure and the source.
+- Each image's bytes are embedded inline (base64) under the content handle the
+  learn_me media store derives for them (SHA-256 of the bytes plus the extension
+  for their MIME type), so a re-import lands the same picture under the same
+  handle.
 
 ## Conversion record
 
-- Tool: the learn_me pack builder in `learn_me_core`, `rdf-owl` adapter.
-- Each term's `part_of` parents (BFO:0000050) become "X is part of Y" cards.
-- Terms selected: the human skeletal bones (see the pack's card list).
-- Deck id: `us-skeleton`.
-- License: `CC0-1.0` (derived from CC-BY-3.0 UBERON, with attribution).
+- **Tool:** the learn_me pack builder in `learn_me_core`
+  (`packages/pack-builder/`, `rdf-owl` adapter) for the UBERON structure list and
+  its `part_of` parents; the curated hierarchy, the prompts and the plates were
+  assembled into the pack from that.
+- **Deck id:** `us-skeleton` (stable — a regenerated corpus keeps the same id).
+- **Card ids:** `us-skeleton-<structure>-part-of`, `us-skeleton-<structure>-clue`,
+  `us-skeleton-<parent>-members-<member>`.
+- **License:** `CC0-1.0` (derived from CC-BY-3.0 UBERON, with attribution).
 
-## Retired key, deliberately not re-emitted
+## This rebuild replaces the earlier mechanical dump
 
-Each card in this pack still carries a `shape` field from before the engine
-retired that concept (a card declares no kind now: its options, or their absence,
-are what it is). The importer ignores an unknown key, so the pack works as it is,
-and it was left byte-identical on purpose: re-emitting it through the builder
-keeps all 109 cards but **changes their ids** (measured 2026-10-22), and an id
-change is how a re-import loses the review history the ids exist to preserve.
+The first version of this pack (109 cards) was a mechanical conversion: front =
+UBERON's label, back = one raw `part_of` parent, no media. It read as a word
+association (*Sternum → Rib*) with the relation left unstated, it carried
+developmental and overly broad parents, and it had no pictures, which made the
+terms hard to tell apart.
 
-So the stale key stays until there is a reason to regenerate the pack properly —
-which means rebuilding from the UBERON term list recorded above, not round-tripping
-the file.
+This pack replaces it: 103 cards, 35 of them illustrated. The card ids changed,
+so importing it **adds** the new cards beside the old ones — remove the earlier
+`us-skeleton` import before importing this pack.
+
+## Verification
+
+Imported end-to-end through the engine's own `JsonDeckParser` with a media store
+wired (throwaway test, since removed): **103/103 cards imported, no issues
+reported, 35 cards carrying a picture**, and the sternum card answers *the
+thoracic cage*.
 
 ## License
 
 The converted pack is `CC0-1.0` (public domain), derived from CC-BY-3.0 UBERON
-with attribution. Full terms: [LICENSE.md](LICENSE.md).
-
-## Status
-
-Shipped. `packs/skeleton.json` holds 109 "X is part of Y" cards across 29
-human skeletal bone terms. Each card's `id` is `UBERON:<term>-<parent-slug>`,
-unique per (term, parent), so the JSON importer keeps every card (a bare
-`obo_id` would collide across parents and be dropped as a duplicate). Verified
-end-to-end: the pack imports cleanly through `JsonDeckParser` (109 cards, text
-fronts present).
+with attribution and using public-domain Gray's Anatomy plates. Full terms:
+[LICENSE.md](LICENSE.md).

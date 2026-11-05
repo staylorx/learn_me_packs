@@ -50,7 +50,7 @@ called out explicitly so terms never get mixed or lost across packs:
 | Pack group | Content | License |
 |------------|---------|---------|
 | [`fcc_radio/`](fcc_radio/) | U.S. Amateur Radio FCC/NCVEC question pools (Technician / General / Extra) | `CC0-1.0` |
-| [`skeleton/`](skeleton/) | Human skeletal anatomy "X is part of Y" facts (UBERON) | `CC0-1.0` (derived from CC-BY-3.0) |
+| [`skeleton/`](skeleton/) | Illustrated human skeletal anatomy: the skeleton hierarchy, one fact per card (UBERON + Gray's Anatomy plates) | `CC0-1.0` (derived from CC-BY-3.0) |
 
 Each group has:
 - **`packs/`** — the JSON `DeckDocument` packs,

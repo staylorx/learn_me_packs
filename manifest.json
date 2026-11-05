@@ -45,12 +45,13 @@
         "anatomy",
         "skeleton",
         "bones",
-        "uberon"
+        "uberon",
+        "illustrated"
       ],
       "age": "16+",
       "license": "CC0-1.0",
-      "cards": 109,
-      "source": "UBERON anatomy ontology (human skeletal bones)",
+      "cards": 103,
+      "source": "Curated human-skeleton hierarchy from the UBERON anatomy ontology, illustrated with Gray's Anatomy (1918) plates",
       "source_url": "https://www.ebi.ac.uk/ols4/ontologies/uberon"
     },
     {
