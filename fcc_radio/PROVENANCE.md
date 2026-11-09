@@ -80,6 +80,23 @@ bytes ride as a sibling `figure` media object.
   when the engine re-exports it — holds. All three packs change on that one
   removed line; counts, ids, order, cards, figures and the manifest rows are
   unchanged.
+- 2026-11-09 (fifth re-emission): two beta card flags on the Technician pack.
+  (1) `T0C02` — *"it's a multiple choice but the choices aren't shown. They
+  shouldn't be either in cards. This isn't a quiz."* A pool item is written for a
+  paper choice form; on a recall card the flip shows only the answer, so a
+  "which of the following …?" stem names a list the student never sees. All 345
+  such fronts across the three packs are now direct questions — "Which of the
+  following frequencies has …?" becomes "What frequency has …?", with the noun
+  made singular only where deleting the phrase would leave it disagreeing with
+  its verb (the pool's own typo, "What of the following instruments" on `E8A05`,
+  is handled the same way). (2) `T6C08` — *"it references a diagram or image that
+  isn't shown."* The 44 figure cards carried their bytes in a card-level `figure`
+  key the learn_me reader never read, so the diagram never reached the served
+  card. The figure now rides on the front side (`front.media`), the shape the
+  engine's reader and writer already use, so a media-capable surface draws it.
+  Card counts, ids, order, options, domains, `figure_dependent` and the manifest
+  rows are unchanged; the diff is the rewritten fronts and the relocated figure
+  bytes alone.
 
 ## License
 
